@@ -1,4 +1,11 @@
 
+/*
+I tried make a toy implementation of the game I play frequently whose name is  PYSCH.This game has inheritance and composition
+in it so I tried to implement those two concepts in the context of this game
+It is multiplayer game .In this game a person starts a game by requesting a space to play.The system will generate a gamecode and
+gives it to the gameleader(player who requests for space)to share to the players. The player would join the game with the help of game code 
+and play the game.A game consists of rounds and each round consists of questions.
+*/
 import java.util.*;
 public class Inheritance_Composition
 {
