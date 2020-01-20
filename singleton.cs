@@ -15,9 +15,10 @@ class Solution {
 class AddressValidator
 {
     public static AddressValidator addressValidator;
+    //Pincodes stores a list of pincodes
     private AddressValidator()
     {
-    
+        //some code to get the data from the database 
     }
     public static  AddressValidator getInstance()
     {
