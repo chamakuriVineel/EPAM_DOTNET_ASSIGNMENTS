@@ -1,0 +1,31 @@
+using System;
+class Solution {
+    
+  static void Main()
+  {
+      
+    AddressValidator firstInstance=AddressValidator.getInstance();
+    AddressValidator secondInstance=AddressValidator.getInstance();
+    Console.WriteLine("firstInstance: " + firstInstance.GetHashCode());
+    Console.WriteLine("secondInstance: "+secondInstance.GetHashCode());
+  }
+  
+}
+
+class AddressValidator
+{
+    public static AddressValidator addressValidator;
+    private AddressValidator()
+    {
+    
+    }
+    public static  AddressValidator getInstance()
+    {
+        if(addressValidator==null)
+        {
+            Console.WriteLine("First Time called");
+            addressValidator=new AddressValidator();
+        }
+        return addressValidator;
+    }
+}
